@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+    public float pushPower = 2.0f;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -64,4 +65,25 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        
+        Rigidbody body = hit.collider.attachedRigidbody;
+
+        if(body == null || body.isKinematic)
+        {
+            return;
+        }
+
+        if (hit.moveDirection.y < -0.3)
+        {
+            return;
+        }
+        Debug.Log("hit");
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+
+        body.velocity = pushDir * pushPower;
+    }
+
 }
