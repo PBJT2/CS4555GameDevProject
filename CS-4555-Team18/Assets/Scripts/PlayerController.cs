@@ -68,17 +68,10 @@ public class PlayerController : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-<<<<<<< HEAD
 
         Rigidbody body = hit.collider.attachedRigidbody;
 
         if (body == null || body.isKinematic)
-=======
-        
-        Rigidbody body = hit.collider.attachedRigidbody;
-
-        if(body == null || body.isKinematic)
->>>>>>> cfa1534e67996f3fbdbacc069b77b07c728be55c
         {
             return;
         }
@@ -87,7 +80,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        Debug.Log("hit");
+
         Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 
         body.velocity = pushDir * pushPower;
