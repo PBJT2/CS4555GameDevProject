@@ -10,13 +10,6 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -58,11 +51,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11918}
+      Script: {instanceID: 11916}
     - Class: 114
-      Script: {instanceID: 12550}
+      Script: {instanceID: 12548}
     - Class: 114
-      Script: {instanceID: 41026}
+      Script: {instanceID: 12564}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -414,6 +407,12 @@ ScriptsOnlyBuild:
     className: InputStateWindow
   - hash:
       serializedVersion: 2
+      Hash: 6b990d978f0bb8f602c53242cc9019cf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeMaterialColor
+  - hash:
+      serializedVersion: 2
       Hash: 9b06583966b5c25325233c4ef1ab1fd4
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.HID.Editor
@@ -442,6 +441,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: f764e06cc57c08beb6cb557b7f505d16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyController
   - hash:
       serializedVersion: 2
       Hash: 5d5b0c61f3ab6ff5f41b1bbe19764526
@@ -676,19 +681,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 6b990d978f0bb8f602c53242cc9019cf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChangeMaterialColor
-  - hash:
-      serializedVersion: 2
-      Hash: f764e06cc57c08beb6cb557b7f505d16
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyController
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/lugoe/Code/school_work/CS4555/CS-4555-Team18/CS-4555-Team18.exe
+  playerPath: C:/Users/Aaron/Documents/GameBuild/CS-4555-Team18.exe
