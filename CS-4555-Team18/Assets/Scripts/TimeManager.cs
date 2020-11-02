@@ -8,11 +8,11 @@ public class TimeManager : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
     public float timeLimit = 120;
+    public AudioSource clock;
     private float timeRemaining;
     float minutes;
     float seconds;
     public bool timerIsRunning = false;
-
     HealthManager hm;
     
 
@@ -30,13 +30,18 @@ public class TimeManager : MonoBehaviour
         {
             if(timeRemaining > 0)
             {
+                if (!clock.isPlaying)
+                {
+                    clock.Play();
+                }
+                
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
             }
             else
             {
                 timerText.SetText("00:00");
-                Debug.Log("Time has run out.");
+                clock.Stop();
                 timerIsRunning = false;
                 timeRemaining = timeLimit;
                 hm.Damage(1);
