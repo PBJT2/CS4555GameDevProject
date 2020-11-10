@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public InputAction controls;
     public InputAction jumpControl;
     public CharacterController controller;
-    public float speed = 12f;
+    public float speed = 2f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     public float pushPower = 2.0f;
