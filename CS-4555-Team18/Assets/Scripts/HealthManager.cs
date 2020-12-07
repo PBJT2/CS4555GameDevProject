@@ -38,7 +38,7 @@ public class HealthManager : MonoBehaviour
         else
         {
             healthText.text = "Lives: " + currentHealth;
-            SceneManager.LoadScene("Level4");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

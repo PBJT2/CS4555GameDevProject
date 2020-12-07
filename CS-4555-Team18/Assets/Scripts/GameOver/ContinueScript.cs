@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ContinueScript : MonoBehaviour
 {
     public void reviveDavid(){
-        SceneManager.LoadScene("Level4");
+        SceneManager.LoadScene("Level3");
 
     }
 }
